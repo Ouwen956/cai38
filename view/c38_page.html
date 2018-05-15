@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>彩票导航</title>
+  <link rel="stylesheet" href="../node_modules/fullpage.js/dist/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="../css/c38_page.css">
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/fullpage.js/dist/jquery.fullpage.min.js"></script>
+  <style>
+  </style>
+</head>
+
+<body>
+  <div id="menu">
+    <a href="../index.html">
+      <img src="../images/FHlogo.png" class="logo_icon">
+    </a>
+    <ul>
+      <li data-menuanchor="page1" class="active">
+        <a href="#page1">APP下载</a>
+      </li>
+      <li data-menuanchor="page2">
+        <a href="#page2">投注流程</a>
+      </li>
+      <li data-menuanchor="page3">
+        <a href="#page3">购买优势</a>
+      </li>
+      <li data-menuanchor="page4">
+        <a href="../index.html">免费开户</a>
+      </li>
+    </ul>
+
+    <div class="kf clearfix">
+      <img src="../images/kf.png">
+      <a href="#">7*24在线客服</a>
+    </div>
+  </div>
+
+  <div id="sucaihuo">
+    <!-- 第一屏 -->
+    <div class="section">
+      <img src="../images/abg.png">
+      <img src="../images/a1.png">
+      <img src="../images/a2.png">
+      <img src="../images/a3.png">
+      <img src="../images/a4.png">
+      <img src="../images/a5.png">
+      <img src="../images/a6.png">
+      <a href="#" class="a_img_l">
+        <img src="../images/a7.png">
+      </a>
+      <a href="#" class="a_img_r">
+        <img src="../images/a8.png">
+      </a>
+    </div>
+    <!-- 第二屏 -->
+    <div class="section">
+      <img src="../images/bbg.png">
+      <img src="../images/b1.png">
+      <img src="../images/b2.png">
+      <img src="../images/b3.png">
+      <img src="../images/b4-1.png">
+      <img src="../images/b4-2.png">
+      <img src="../images/b4-3.png">
+      <img src="../images/b4-4.png">
+    </div>
+
+    <!-- 第三屏 -->
+    <div class="section">
+      <img src="../images/cbg.png">
+      <img src="../images/c1.png">
+      <img src="../images/c2.png">
+      <img src="../images/c3.png">
+      <img src="../images/c4-1.png">
+      <img src="../images/c4-2.png">
+    </div>
+  </div>
+  <div class="footer">
+    <ul class="footer_ul">
+      <li>
+        <a href="../index.html">线路一</a>
+      </li>
+      <li>
+        <a href="../index.html">线路二</a>
+      </li>
+      <li>
+        <a href="../index.html">线路三</a>
+      </li>
+      <ul>
+  </div>
+  </div>
+</body>
+<script>
+  $(function () {
+    $('#sucaihuo').fullpage({
+      sectionsColor: ['#e54634', '#ff9920', '#8e20ff'],
+      anchors: ['page1', 'page2', 'page3'],
+      menu: '#menu',
+      navigation: true,
+      afterLoad: function () {
+        $(this).removeClass("active")
+        var t = $(this)
+        setTimeout(function () {
+          t.addClass("active")
+        }, 0)
+      }
+    });
+  });
+</script>
+
+</html>

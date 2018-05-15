@@ -1,0 +1,59 @@
+.content {
+  width: 100%;
+  height: 670px;
+  background-image: url('../images/main_top_bg.jpg');
+}
+.content .mobile_box,
+.content .info_r {
+  float: left;
+}
+.content .mobile_box {
+  margin-left: 420px;
+  margin-top: 80px;
+}
+.content .info_r {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.content .info_r .right_l,
+.content .info_r .right_r {
+  width: 176px;
+  float: left;
+  margin-top: 20px;
+}
+.content .info_r .right_l a,
+.content .info_r .right_r a {
+  display: inline-block;
+  width: 176px;
+  height: 51px;
+}
+.content .info_r .right_l .bg_img,
+.content .info_r .right_r .bg_img {
+  display: inline-block;
+  width: 174px;
+  height: 174px;
+  padding: 14px;
+  margin-top: 10px;
+  background: url('../images/ewm-bg.png') no-repeat;
+}
+.content .info_r .right_l .bg_img img,
+.content .info_r .right_r .bg_img img {
+  width: 146px;
+  height: 146px;
+}
+.content .info_r .right_l p,
+.content .info_r .right_r p {
+  text-align: center;
+  color: #d53224;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.content .info_r .right_l a {
+  background: url(../images/mobiel-download.png?9d554babf0) no-repeat;
+}
+.content .info_r .right_r {
+  margin-left: 60px;
+}
+.content .info_r .right_r a {
+  background: url(../images/mobiel-download.png?9d554babf0) no-repeat 0px -62px;
+}

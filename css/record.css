@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  text-decoration: none;
+}
+.select:hover {
+  background-color: #edf4fe!important;
+}
+.select.active span {
+  background-color: #ffc214!important;
+}
+/* 整个页面 */
+.main_body {
+  width: 100%;
+  background: url('../images/main_bg.jpg') no-repeat 0 0 #3682d0;
+  overflow: hidden;
+  /* 头部 */
+}
+.main_body .header {
+  width: 100%;
+  background: url('../images/nav_bg.png');
+  overflow: hidden;
+  /* 顶部 */
+  /* 游戏列表 */
+}
+.main_body .header .top_bar {
+  width: 100%;
+}
+.main_body .header .top_bar .logo {
+  float: left;
+  margin-left: 20px;
+  margin-top: 3px;
+}
+.main_body .header .top_bar .logo img {
+  float: left;
+  width: 224px;
+  height: 60px;
+}
+.main_body .header .top_bar .menu1 {
+  width: 538px;
+  height: 52px;
+  background: url('../images/top_bg.png') no-repeat 0 0;
+  margin-left: 250px;
+}
+.main_body .header .top_bar .menu1 .menu1_l {
+  float: left;
+}
+.main_body .header .top_bar .menu1 .menu1_l p {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 6px;
+  margin-left: 40px;
+}
+.main_body .header .top_bar .menu1 .menu1_c span {
+  float: left;
+  width: 27px;
+  margin: 15px 0 0 5px;
+  height: 20px;
+  background: url('../images/ball-pk.png') no-repeat;
+}
+.main_body .header .top_bar .menu1 .menu1_c :first-child {
+  margin-left: 20px;
+}
+.main_body .header .top_bar .menu1 .menu1_c :nth-child(2) {
+  background-position: 0 -21px;
+}
+.main_body .header .top_bar .menu1 .menu1_c :nth-child(3) {
+  background-position: 0 -105px;
+}
+.main_body .header .top_bar .menu1 .menu1_c :nth-child(4) {
+  background-position: 0 -63px;
+}
+.main_body .header .top_bar .menu1 .menu1_c :nth-child(5) {
+  background-position: 0 -147px;
+}
+.main_body .header .top_bar .menu1 .menu1_c :nth-child(6) {
+  background-position: 0 -21px;
+}
+.main_body .header .top_bar .menu1 .menu1_c :nth-child(7) {
+  background-position: 0 -190px;
+}
+.main_body .header .top_bar .menu1 .menu1_c :nth-child(8) {
+  background-position: 0 -148px;
+}
+.main_body .header .top_bar .menu1 .menu1_c :nth-child(9) {
+  background-position: 0 -21px;
+}
+.main_body .header .top_bar .menu1 .menu1_c :nth-child(10) {
+  background-position: 0 -21px;
+}
+.main_body .header .top_bar .menu1 .menu1_r {
+  width: 16px;
+  height: 16px;
+  float: right;
+  cursor: pointer;
+  margin: 5px 33px 0 0;
+  background: url(../images/sound.png) no-repeat;
+}
+.main_body .header .top_bar .menu2 ul {
+  position: absolute;
+  height: 44px;
+  width: 290px;
+  left: 770px;
+  top: 3px;
+}
+.main_body .header .top_bar .menu2 ul li {
+  float: left;
+  font-size: 12px;
+  margin-left: 18px;
+  margin-top: 5px;
+}
+.main_body .header .top_bar .out a {
+  float: left;
+  line-height: 22px;
+  width: 70px;
+  height: 25px;
+  background-image: url('../images/logout.png');
+  margin-left: 820px;
+  margin-top: -34px;
+}
+.main_body .header .game_list {
+  width: 100%;
+  overflow: hidden;
+  height: 36px;
+}
+.main_body .header .game_list .game_list_ul {
+  overflow: hidden;
+}
+.main_body .header .game_list .game_list_ul li {
+  width: 117px;
+  height: 36px;
+  float: left;
+  line-height: 36px;
+  text-align: center;
+  overflow: hidden;
+}
+.main_body .header .game_list .game_list_ul li a {
+  font-size: 12px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.main_body .header .game_list .game_list_ul li:hover {
+  background-color: #fff;
+}
+.main_body .header .game_list .game_list_ul li:hover a {
+  color: #133a83;
+}
+.main_body .header .game_list .game_list_ul li.active {
+  background-color: #fff;
+}
+.main_body .header .game_list .game_list_ul li.active a {
+  color: #133a83;
+}
+.main_body .header .game_list .moreGame {
+  clear: both;
+  position: absolute;
+  z-index: 99999;
+  font-size: 12px;
+  background-color: #EEEEEE;
+  border: 1px solid #133a83;
+  border-radius: 1px;
+  margin: 0 0 0 690px;
+  padding: 15px;
+  text-align: center;
+  width: 450px;
+  display: none;
+}
+.main_body .header .game_list .moreGame .moreGameinner {
+  clear: both;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  padding: 15px;
+  border: 1px solid #CCCCCC;
+}
+.main_body .header .game_list .moreGame .moreGameinner a {
+  display: block;
+  float: left;
+  line-height: 16px;
+  height: 16px;
+  color: #FFFFFF;
+  background-color: #2161b3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 125px;
+  text-align: center;
+  margin: 3px 5px 3px 5px;
+}
+.main_body .header .game_list .moreGame .moreGameinner a:hover {
+  background-color: #133a83;
+}
+.main_body .header .game_menus {
+  padding-left: 190px;
+  font-size: 12px;
+  color: #fff;
+  height: 36px;
+  line-height: 36px;
+}
+.main_body .header .game_menus a:hover {
+  color: #ff0;
+  font-weight: bold;
+}
+.main_body .header .game_menus a.active {
+  color: #ff0;
+  font-weight: bold;
+}
+.game_main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.game_main .siderbar,
+.game_main .content_r {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  _height: 100%;
+}
+.game_main .siderbar {
+  background: url('../images/side_bg.jpg') no-repeat left top #2f6ed7;
+  width: 190px;
+  left: 0;
+  float: left;
+}
+.game_main .siderbar .tit {
+  background: url('../images/left_bg.png') no-repeat scroll 0 0;
+  color: #fff;
+  font-weight: bold;
+  height: 33px;
+  line-height: 33px;
+  margin-top: 4px;
+  margin-left: 6px;
+  text-align: center;
+  font-size: 12px;
+}
+.game_main .siderbar .user {
+  font-size: 13px;
+  margin-top: 12px;
+}
+.game_main .siderbar .user .info {
+  color: #fff;
+  clear: both;
+  overflow: hidden;
+  width: 190px;
+  height: 22px;
+}
+.game_main .siderbar .user .info label {
+  color: #36639d;
+  width: 78px;
+  height: 22px;
+  text-align: right;
+  float: left;
+}
+.game_main .siderbar .user .info span {
+  float: left;
+  margin-left: 12px;
+}
+.game_main .siderbar .user .info img {
+  width: 18px;
+  height: 18px;
+  margin-left: 20px;
+}
+.game_main .siderbar .self {
+  background: url('../images/left_bg.png') no-repeat scroll 0 0;
+  width: 184px;
+  font-weight: bold;
+  height: 33px;
+  line-height: 33px;
+  margin-top: 4px;
+  margin-left: 6px;
+  text-align: center;
+}
+.game_main .siderbar .self a {
+  font-size: 12px;
+}
+.game_main .siderbar .self a:hover {
+  color: red;
+}
+.game_main .siderbar .online {
+  background: url('../images/left_bg.png') no-repeat scroll 0 0;
+  width: 184px;
+  font-weight: bold;
+  height: 33px;
+  line-height: 33px;
+  margin-top: 4px;
+  margin-left: 6px;
+  text-align: center;
+  background-image: linear-gradient(#71ec80, #30ad3a, #0de013) !important;
+  display: block;
+  border-radius: 45px;
+  width: 175px;
+  border: 1px;
+  border-style: inset;
+  border-color: #58ad58;
+}
+.game_main .siderbar .online a {
+  font-size: 12px;
+}
+.game_main .siderbar .online a:hover {
+  color: red;
+}
+.game_main .content_r {
+  left: 0;
+  right: 0;
+  margin-left: 190px;
+  _width: 100%;
+  float: left;
+}
+.game_main .content_r .content {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.game_main .content_r .content .record {
+  padding: 10px;
+  width: 900px;
+}
+.game_main .content_r .content .record .record_tit li,
+.game_main .content_r .content .record .record_info li {
+  height: 26px;
+  font-size: 13px;
+  border: 1px solid #b9c2cb;
+  border-right: none;
+  cursor: pointer;
+  text-align: center;
+  float: left;
+  line-height: 26px;
+}
+.game_main .content_r .content .record .record_tit li:nth-child(1),
+.game_main .content_r .content .record .record_info li:nth-child(1) {
+  width: 93px;
+}
+.game_main .content_r .content .record .record_tit li:nth-child(2),
+.game_main .content_r .content .record .record_info li:nth-child(2) {
+  width: 93px;
+}
+.game_main .content_r .content .record .record_tit li:nth-child(3),
+.game_main .content_r .content .record .record_info li:nth-child(3) {
+  width: 94px;
+}
+.game_main .content_r .content .record .record_tit li:nth-child(4),
+.game_main .content_r .content .record .record_info li:nth-child(4) {
+  width: 275px;
+}
+.game_main .content_r .content .record .record_tit li:nth-child(5),
+.game_main .content_r .content .record .record_info li:nth-child(5) {
+  width: 229px;
+}
+.game_main .content_r .content .record .record_tit li:nth-child(6),
+.game_main .content_r .content .record .record_info li:nth-child(6) {
+  width: 95px;
+  border-right: 1px solid #b9c2cb;
+}
+.game_main .content_r .content .record .record_tit li {
+  color: #762d08;
+  background: url(../images/bg-sprites.png) repeat-x 0 -58px;
+  font-weight: bold;
+}
+.game_main .content_r .content .record .record_info li {
+  border-top: none;
+}
+.main_rank {
+  position: absolute;
+  width: 179px;
+  margin-left: 960px;
+  margin-top: 5px;
+}
+.main_rank .tit {
+  border: 1px solid #b9c2cb;
+  background: url("../images/bg-sprites.png") repeat-x 0 -58px;
+  color: #35406d;
+  height: 28px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 28px;
+}
+.main_rank .info li {
+  width: 179px;
+  height: 24px;
+}
+.main_rank .info li span {
+  border-top: none!important;
+}
+.main_rank .info li span:nth-child(1) {
+  float: left;
+  width: 112px;
+  height: 23px;
+  line-height: 23px;
+  padding: 0 5px;
+  text-align: left;
+  font-size: 12px;
+  color: #4f4d4d;
+  border: 1px solid #b9c2cb;
+  border-right: none;
+}
+.main_rank .info li span:nth-child(2) {
+  border: 1px solid #b9c2cb;
+  color: red;
+  float: left;
+  height: 23px;
+  line-height: 23px;
+  padding: 0 5px;
+  text-align: left;
+  font-size: 12px;
+  width: 43px;
+}
+.footer {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+}
+.footer h3 {
+  float: left;
+  width: 80px;
+  background: url('../images/announce-bg.png');
+  height: 30px;
+}
+.footer .foottxt_box {
+  background: url('../images/announce-bg.png') repeat-x 0 -30px;
+  overflow: hidden;
+}
+.footer .foottxt_box a {
+  font-size: 14px;
+  padding-left: 10px;
+  line-height: 30px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.footer .foottxt_box a:hover {
+  color: #fee77d;
+}

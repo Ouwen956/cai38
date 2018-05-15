@@ -1,0 +1,130 @@
+.siderbar {
+	position: absolute;
+	width: 200px;
+	top: 137px;
+	left: 0;
+	bottom: 0;
+	background-color: #e6e6e6;
+	text-align: center;
+	border-right: 1px solid #ccc
+}
+
+.side_left .new {
+	position: absolute;
+	top: 10px;
+	right: 15px
+}
+
+.side_left .info {
+	border: 1px solid #999;
+	border-top: none;
+	width: 188px;
+	margin: -2px 5px 8px;
+	line-height: 22px;
+	background: #fff;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	text-align: left;
+	text-indent: 25px;
+	padding: 5px 0
+}
+
+.side_left .info a {
+	width: auto;
+	height: auto;
+	display: inline;
+	margin-left: 5px
+}
+
+.side_left .info a img {
+	vertical-align: bottom
+}
+
+  /*不能动*/
+.side_left li {
+	position: relative
+}
+
+.side_left .r-wrap {
+	width: 190px;
+	font-weight: 700;
+	margin: 4px 5px 0 5px;
+	line-height: 16px
+}
+
+  /*不能删除*/
+.side_left .r-nowrap1 {
+	font-size: 14px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px
+}
+      /*不能删除*/
+.side_left .nowrap2 {
+	display: inline-block;
+	width: 88px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px
+}
+
+.table-td-valign-top td {
+	vertical-align: top
+}
+
+.skin_red #skinPanel:hover .skin_red .skinHover ul,
+.skin_red #skinPanel:hover ul,
+.skin_red .skinHover {
+	background: #832c3c
+}
+
+.skin_red .r-wrap,
+.skin_red .r-wrap a {
+	color: #fff
+}
+
+.skin_red .r-nowrap1 {
+	background: #d87c86;
+	background: -moz- linear-gradient(top, rgba(216, 124, 134) 0, rgba(199, 94, 114) 100%);
+	background: -webkit- linear-gradient(top, rgba(216, 124, 134) 0, rgba(199, 94, 114) 100%);
+	background: linear-gradient(to bottom, #d87c86 0, #c75e72 100%)
+}
+
+.skin_red .nowrap2 {
+	border: 1px solid #f4521b;
+	background: #ff9461;
+	background: -moz-linear-gradient(top, rgba(255, 148, 97, 1) 0, rgba(255, 104, 53, 1) 100%);
+	background: -webkit-linear-gradient(top, rgba(255, 148, 97, 1) 0, rgba(255, 104, 53, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 148, 97, 1) 0, rgba(255, 104, 53, 1) 100%)
+}
+
+.skin_blue .r-wrap,
+.skin_blue .r-wrap a {
+	color: #fff
+}
+
+.skin_blue .r-nowrap1 {
+	background: #2161b3
+}
+
+.skin_blue .nowrap2 {
+	border: 1px solid #f4521b;
+	background: #ff9461;
+	background: -moz-linear-gradient(top, rgba(255, 148, 97, 1) 0, rgba(255, 104, 53, 1) 100%);
+	background: -webkit-linear-gradient(top, rgba(255, 148, 97, 1) 0, rgba(255, 104, 53, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 148, 97, 1) 0, rgba(255, 104, 53, 1) 100%)
+}
+
+.content-box {
+  padding-left: 200px;
+  height: 100%;
+  overflow: hidden;
+}

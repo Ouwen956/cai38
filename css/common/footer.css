@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.announce {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  font-size: 14px
+}
+
+.announc3-hd {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 134px;
+  height: 30px;
+  text-indent: -999px;
+  overflow: hidden
+}
+
+.announce a {
+  color: #fff
+}
+
+.announce a:hover {
+  color: #fee77d
+}
+
+.announce-list {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  padding-left: 90px;
+  font-size: 14px
+}
+
+.announce-list ul {
+  position: absolute
+}
+
+.announce-list li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.skin_red .announce {
+  background: url('../../images/gamelobby/skin_red/announce-bg.png') repeat-x 0 -30px
+}
+
+.skin_red .announc3-hd {
+  background: url('../../images/gamelobby/skin_red/announce-bg.png') no-repeat 0 0
+}
+
+.skin_blue .announce {
+  background: url('../../images/gamelobby/skin_blue/announce-bg.png') repeat-x 0 -30px
+}
+
+.skin_blue .announc3-hd {
+  background: url('../../images/gamelobby/skin_blue/announce-bg.png') no-repeat 0 0
+}

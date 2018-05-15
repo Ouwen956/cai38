@@ -1,0 +1,549 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+html,body {
+    height: 100%;
+}
+
+input,
+select,
+textarea {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+body {
+    font: 12px/1.5 '\5FAE\8F6F\96C5\9ED1', '\5b8b\4f53', Arial, Helvetica, sans-serif;
+}
+
+.hide {
+    display: none
+}
+.show {
+    display: block
+}
+
+.wrap {
+    position: relative
+}
+
+.sub-wrap {
+    min-width: 800px
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.main-body {
+    min-width: 1230px;
+    height: 100%;
+}
+
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+input {
+    font-family: '\5FAE\8F6F\96C5\9ED1'
+}
+
+.skin_blue .header-top {
+    background: url('../../images/gamelobby/skin_blue/main_bg.jpg') no-repeat 0 0;
+}
+
+.header .header-top {
+    height: 67px;
+    position: relative;
+}
+
+.header .header-top .logo2 {
+    height: 57px;
+    width: 190px;
+    text-align: center;
+    position: absolute;
+    left: 7px;
+    top: 5px;
+}
+
+#result_balls {
+    position: absolute;
+    left: 130px;
+    top: 10px;
+}
+
+.header .header-top .menu1 .draw_number {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
+
+.header .header-top .menu1 .draw_number div {
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.header .header-top .menu1 span {
+    display: block;
+    float: left;
+}
+
+.header .header-top .menu1 {
+    width: 490px;
+    position: absolute;
+    left: 230px;
+    top: 0;
+}
+
+.menu1 .open_sound {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: url('../../images/sound.png') no-repeat;
+    display: block;
+    float: right;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.header .header-top .menu2 {
+    line-height: 22px;
+    font-size: 13px;
+    position: absolute;
+    left: 738px;
+    top: 10px;
+}
+
+.header .header-top .menu2 span {
+    padding: 0 5px;
+}
+
+.header .header-top .menu2 a {
+    width: 5em;
+    color: #fff;
+}
+
+.header .header-top .menu4 {
+    position: absolute;
+    left: 1050px;
+    top: 20px;
+}
+
+.header .menu4 a {
+    display: block;
+    line-height: 22px;
+    background-image: url('../../images/gamelobby/support.png');
+    width: 70px;
+    height: 25px;
+}
+
+.header .header-top .menu3 {
+    position: absolute;
+    left: 1130px;
+    top: 20px;
+}
+
+.header .header-top .menu3 a {
+    display: block;
+    line-height: 24px;
+    width: 60px;
+    height: 24px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: url('../../images/gamelobby/logout.png') no-repeat 9px center;
+    padding-left: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#skinPanel {
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+}
+
+#skinPanel ul {
+    padding: 0 0 10px 0;
+    margin-left: -5px;
+    list-style: none;
+    position: absolute;
+    width: 62px;
+    z-index: 999;
+    background-color:#2765b5;
+    display: none;
+}
+
+#skinPanel ul li {
+    padding: 2px 6px;
+    height: 20px;
+    line-height: 22px;
+    clear: both;
+}
+
+#skinPanel li a {
+    color: #ddd;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#skinPanel li i {
+    display: inline-block;
+    border: 1px solid #ffc8c8;
+    height: 9px;
+    width: 9px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* top middle start*/
+.header .lotterys {
+    height: 38px;
+    line-height: 38px;
+    position: relative;
+    z-index: 2;
+}
+
+.header .lotterys .show {
+    float: left;
+}
+
+.header .lotterys .show>a {
+    display: block;
+    float: left;
+    font-size: 13px;
+    text-align: center;
+    width: 120px;
+    position: relative;
+}
+
+.header .lotterys a span {
+    display: block;
+    width: 100%;
+}
+
+.header .lotterys .more-game>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header .lotterys .more-game {
+    position: absolute;
+    font-weight: 700;
+    text-align: center;
+    width: 112px;
+    height: 100%;
+    left: 1110px;
+    top: 0;
+}
+
+.header .lotterys .currentGameTxt {
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* 更多游戏列表 */
+.header .gamebox {
+    margin-top: 20px;
+    padding: 25px 35px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    height: auto;
+    overflow: hidden;
+}
+
+.header .more-game-drop {
+    position: absolute;
+    right: -1px;
+    top: 38px;
+    width: 480px;
+    height: auto;
+    padding: 0 15px 8px 15px;
+    overflow: hidden;
+    text-align: left;
+    font-weight: 400;
+    color: #333;
+}
+
+.header .gamebox a {
+    display: block;
+    width: 130px;
+    height: 38px;
+    float: left;
+    margin: 1px;
+    color: #fff;
+    position: relative;
+}
+
+.header .lotterys a span {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.header .more-game-drop .actions {
+    position: absolute;
+    right: 17px;
+    bottom: 6px;
+}
+
+.header .more-game-drop .actionBtn {
+    display: inline-block;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 18px;
+    line-height: 1em;
+    font-weight: 400;
+}
+
+/* top middle end */
+
+/* top bottom star */
+.header .sub {
+    height: 31px;
+    overflow: hidden;
+    line-height: 32px;
+    padding-left: 200px;
+}
+
+.header .sub .selected, .header .sub a:hover {
+    font-weight: 700;
+}
+
+.header .sub a {
+    padding: 0 .5em;
+}
+/* top bottom end */
+
+.menu1 .T_PK10 b {
+    margin: 15px 0 0 5px;
+    height: 20px;
+    background: url("../../images/gamelobby/ball/ball-pk.png") no-repeat;
+}
+
+.menu1 .T_PK10 .b1 {
+    background-position: 0 0;
+}
+
+.menu1 .T_PK10 .b2 {
+    background-position: 0 -21px;
+}
+
+.menu1 .T_PK10 .b3 {
+    background-position: 0 -42px;
+}
+
+.menu1 .T_PK10 .b4 {
+    background-position: 0 -63px;
+}
+
+.menu1 .T_PK10 .b5 {
+    background-position: 0 -84px;
+}
+
+.menu1 .T_PK10 .b6 {
+    background-position: 0 -105px;
+}
+
+.menu1 .T_PK10 .b7 {
+    background-position: 0 -126px;
+}
+
+.menu1 .T_PK10 .b8 {
+    background-position: 0 -147px;
+}
+
+.menu1 .T_PK10 .b9 {
+    background-position: 0 -168px;
+}
+
+.menu1 .T_PK10 .b10 {
+    background-position: 0 -189px;
+}
+
+
+
+.menu1 span {
+    display: block;
+    float: left;
+}
+
+.menu1 b {
+    display: block;
+    height: 27px;
+    margin-top: 10px;
+    text-indent: -99999px;
+    width: 27px;
+}
+
+.skin_blue .header .menu3 a {
+    background-color: #2f97f7;
+}
+
+.skin_blue .header .lotterys {
+    background: #2161b3;
+}
+
+.skin_blue .header .lotterys .show span {
+    background: url('../../images/gamelobby/nav_shuxian.png') no-repeat scroll right 10px;
+}
+
+.skin_blue .lotterys .selected, .skin_blue .lotterys .show>a:hover {
+    color: #143679;
+    background: #e6e6e6;
+    background: linear-gradient(to bottom,rgba(230,230,230,1) 0,rgba(231,231,231,1) 100%);
+}
+
+.skin_blue .lotterys .selected span, .skin_blue .lotterys .show>a:hover span{
+    background: none!important;
+}
+
+.skin_blue .header .lotterys .more-game {
+    border-left: 1px solid #2161b3;
+}
+
+.skin_blue .header .more-game-drop {
+    background-color: #e7e7e7;
+    border: 1px solid #2161b3;
+}
+
+.skin_blue .header .gamebox a {
+    background: #2161b3;
+}
+
+.skin_blue .header .actionBtn {
+    background: #2161b3;
+}
+
+.skin_blue .sub {
+    color: #666;
+    background: -webkit-linear-gradient(top,rgba(230,230,230,1) 0,rgba(231,231,231,1) 100%);
+    background: linear-gradient(to bottom,rgba(230,230,230,1) 0,rgba(231,231,231,1) 100%);
+    border-bottom: 1px solid #ccc;
+}
+
+.skin_blue .sub a {
+    color: #666;
+}
+
+.skin_blue .sub .selected, .skin_blue .sub a:hover {
+    color: #f98d5c;
+}
+
+.skin_blue .header .more-game-drop a:hover {
+    background: #143679;
+    color: #fff;
+}
+
+/* 红色皮肤 */
+.skin_red .header-top {
+    background: url('../../images/gamelobby/skin_red/main_bg.jpg') no-repeat 0 0;
+}
+
+.skin_red .header .lotterys {
+    background: #6a1f2d;
+}
+
+.skin_red .header .lotterys .show span {
+    background: url('../../images/gamelobby/skin_red/nav_shuxian.png') no-repeat scroll right 10px;
+}
+
+.skin_red .lotterys .selected, .skin_red .lotterys a:hover {
+    color: #54131e;
+    background: #d67a84;
+}
+
+.skin_red .lotterys .selected span, .skin_red .lotterys .show>a:hover span{
+    background: none!important;
+}
+
+.skin_red .sub {
+    color: #fff;
+    background: #d87c86;
+    border-bottom: 1px solid #ccc;
+}
+
+.skin_red .sub .selected, .skin_red .sub a:hover {
+    color: #54131e;
+}
+
+.skin_red .header .more-game-drop {
+    background-color: #e7e7e7;
+    border: 1px solid #6a1f2d;
+}
+
+.skin_red .header .gamebox a {
+    background: #d67a84;
+}
+.skin_red .header .actionBtn {
+    background: #d67a84;
+}
+
+.skin_red .header .more-game-drop a:hover {
+    background: #143679;
+    color: #fff;
+}
+
+.skin_red .header .more-game-drop a:hover {
+    background: #6a1f2d;
+    color: #fff;
+}
+
+.header {
+    bottom: auto;
+    height: 135px;
+    color: #fde6eb;
+    min-width: 1225px
+}
+
+.header a{
+    color: #fff;
+}
+
+.main {
+    height: calc(100% - 135px);
+}
+
+.show {
+    display: block;
+}

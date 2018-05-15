@@ -1,0 +1,99 @@
+.content {
+    .about_left {
+        float: left;
+        width: 160px;
+        margin: 20px 0;
+        h1 {
+            background: url(../images/lehecai_about_bdcp.png) no-repeat -300px -700px;
+            height: 35px;
+            line-height: 35px;
+            position: relative;
+            text-align: center;
+            font-size: 0;
+            margin: 0;
+        }
+        ul {
+            background: #fff7eb;
+            li {
+                margin-top: -1px;
+                background: url(../images/lehecai_about_bdcp.png) no-repeat 0px -500px;
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+                border-left: 1px solid #fecf44;
+                border-bottom: 1px solid #fecf44;
+                a {
+                    color: #414141;
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    &:hover {
+                        background: url(../images/lehecai_about_bdcp.png) no-repeat -284px 3px;
+                    }
+                }
+                .selected {
+                    background: url(../images/lehecai_about_bdcp.png) no-repeat -284px 3px;
+                    color: red;
+                }
+            }
+        }
+    }
+    .about_right {
+        font-family: 宋体;
+        background: url(../images/lehecai_about_bdcp.png) no-repeat -1px -801px;
+        float: left;
+        border: 1px solid #fecf44;
+        width: 807px;
+        margin: 20px 0 10px 5px;
+        padding-bottom: 120px;
+        .tit {
+            width: 795px;
+            height: 30px;
+            line-height: 30px;
+            color: #f88c01;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 auto;
+            padding-left: 10px;
+            border-bottom: 1px solid #fecf44;
+        }
+        .con {
+            margin-top: 20px;
+            width: 98%;
+            margin-right: 10px;
+            padding-left: 10px;
+            .con_tit {
+                position: fixed;
+                width: 820px;
+                height: 46px;
+                background-color: #b41f1f;
+                cursor: move;
+                margin: 0;
+                text-align: center;
+                font: 22px/22px 'microsoft yahei';
+                font-weight: bold;
+                color: #FFFFFF;
+                line-height: 46px;
+                a{
+                    background: url('../images/popup_guanbi.png') repeat 0px 0px;
+                    width: 35px;
+                    height: 35px;
+                    display: block;
+                    position: absolute;
+                    top: 8px;
+                    right: 10px;
+                    cursor: pointer;
+                    &:hover{
+                        background: url('../images/popup_guanbi.png') repeat 0px -35px;
+                    }
+                }
+            }
+            .con_info{
+                padding-top: 46px;
+              img{
+                width: 820px;
+              }
+            }
+        }
+    }
+}
